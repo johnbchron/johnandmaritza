@@ -1,0 +1,11 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = { version = "0.8.8", features = ["macros", "http2"] }
+columbo = "0.1.0"
+maud = "0.27.0"
+miette = { version = "7.6.0", features = ["fancy"] }
+tokio = { version = "1.49.0", features = ["full"] }
