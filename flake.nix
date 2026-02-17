@@ -53,7 +53,7 @@
       };
     in {
       devShells.default = pkgs.devshell.mkShell {
-        packages = [ (toolchain_fn pkgs) pkgs.gcc pkgs.tailwindcss_4 ];
+        packages = with pkgs; [ (toolchain_fn pkgs) gcc tailwindcss_4 flyctl ];
         motd = "\n  Welcome to the {2}johnandmaritza{reset} shell.\n";
       };
       packages = {
